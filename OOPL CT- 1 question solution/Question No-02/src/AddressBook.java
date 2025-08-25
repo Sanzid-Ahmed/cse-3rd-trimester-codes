@@ -1,11 +1,11 @@
 public class AddressBook {
     String name;
-    int phoneNumber;
+    String phoneNumber;
     String borrowedBook;
     int daysKept;
     double fine;
 
-    public AddressBook(String name, int phoneNumber, String borrowedBook, int daysKept,  double fine){
+    public AddressBook(String name, String  phoneNumber, String borrowedBook, int daysKept){
         this.name = name;
         this.phoneNumber = phoneNumber;
         this.borrowedBook = borrowedBook;
@@ -14,11 +14,11 @@ public class AddressBook {
     }
 
     public void showDetails(){
-        System.out.println(name);
-        System.out.println(phoneNumber);
-        System.out.println(borrowedBook);
-        System.out.println(daysKept);
-        System.out.println(fine);
+        System.out.println("Name: " +name);
+        System.out.println("Phone Number: " +phoneNumber);
+        System.out.println("Borrowed Book: " + borrowedBook);
+        System.out.println("Days kept: " + daysKept);
+        System.out.println("Current Fine: " + fine);
     }
 
     void calculateFine(){
@@ -28,10 +28,10 @@ public class AddressBook {
 
     public void updateAndShowDetails(){
         calculateFine();
-        System.out.println(name);
-        System.out.println(phoneNumber);
-        System.out.println(borrowedBook);
-        System.out.println(daysKept);
-        System.out.println(fine);
+        System.out.println("Name: " +name);
+        System.out.println("Phone Number: " +phoneNumber);
+        System.out.println("Borrowed Book: " + borrowedBook);
+        System.out.println("Days kept: " + daysKept);
+        System.out.println("Current Fine: " + fine);
     }
 }
