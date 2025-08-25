@@ -12,7 +12,7 @@ public class arrayMain {
 
         System.out.println("Numbers greater then 50 are => ");
         for(int i: array1){
-            if(greaterThen50.number(i) != NULL)
+            if(greaterThen50.number(i) != 0)
                 System.out.print(i + " ");
         }
 
