@@ -6,6 +6,6 @@ public class arrayMain {
 
         int[] array1 = {45, 78, 22, 96, 53, 41, 11, 88};
 
-
+        System.out.println("Sum of the even numbers from the array => " + evenNumberSum.sum(array1));
     }
 }
