@@ -1,11 +1,43 @@
-public class Main {
-    public static void main(String[] args)
+class MindGame {
+    int a = 0;
+    int b = 2;
+    static int c = 0;
+    static int d = 5;
+
+    MindGame() {
+        a--;
+        b += 5;
+        c++;
+        d--;
+    }
+
+    static {
+        c--;
+        d += c;
+    }
+
     {
-        Logarithm log1 = new Logarithm(2, 9);
-        Logarithm log2 = new Logarithm(log1);
-        Logarithm log3 = new Logarithm();
-        System.out.println(log1.b +"  "+log1.x+"  "+log1.myfunc());
-        System.out.println(log2.b +"  "+log2.x+"  "+log2. myfunc());
-        System.out.println(log3.b +"  "+log3.x+"  "+log3. myfunc());
+        a = c++;
+        b = b + d;
+    }
+
+    public void displayAB() {
+        System.out.println("a = " + a);
+        System.out.println("b = " + b);
+    }
+
+    public static void displayCD() {
+        System.out.println("c = " + c);
+        System.out.println("d = " + d);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        MindGame.displayCD();
+        MindGame m1 = new MindGame();
+        m1.displayAB();
+        m1.displayCD();
+        MindGame.displayCD();
     }
 }
