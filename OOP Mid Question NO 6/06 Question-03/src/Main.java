@@ -10,6 +10,6 @@ public class Main {
         Sphere sphere2 = new Sphere(3.5);
 
         sum = sphere1.findVolume() + cone1.findVolume() + cylinder1.findVolume() + cone2.findVolume() + sphere2.findVolume();
-        
+
     }
 }
