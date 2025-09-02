@@ -5,5 +5,6 @@ public class AnimalTest {
         Animal pk = new Pokemon();
         defaultAnimal.showNameColor();
         pk.showNameColor();
+        System.out.println(((Pokemon)pk).name);
     }
 } 
