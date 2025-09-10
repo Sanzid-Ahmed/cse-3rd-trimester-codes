@@ -33,7 +33,8 @@ public class Movie {
     }
 
     public void Details(){
-        System.out.println("You are watching SHUTTER ISLAND");
+//        System.out.println("You are watching SHUTTER ISLAND");
+        System.out.println("You are watching " + name.toUpperCase());
         System.out.println("Origin: " + origin);
         System.out.println("Genre: " + genre);
         System.out.println("Rating:" + rating);
